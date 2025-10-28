@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/congresosummithuesca2025/static/css/main.3339d4ca.css",
+    "main.js": "/congresosummithuesca2025/static/js/main.8b37de90.js",
+    "index.html": "/congresosummithuesca2025/index.html",
+    "main.3339d4ca.css.map": "/congresosummithuesca2025/static/css/main.3339d4ca.css.map",
+    "main.8b37de90.js.map": "/congresosummithuesca2025/static/js/main.8b37de90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3339d4ca.css",
+    "static/js/main.8b37de90.js"
+  ]
+}
