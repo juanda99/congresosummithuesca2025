@@ -2,7 +2,7 @@
   "name": "congresosummithuesca2025",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://congresosummithuesca2025.catedu.es",
+  "homepage": "http://congresosummithuesca2025.catedu.es",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
