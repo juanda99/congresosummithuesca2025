@@ -161,17 +161,101 @@ function App() {
           <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">
             Ponentes
           </h2>
-          <div className="grid md:grid-cols-4 gap-6">
-            {[1, 2, 3, 4].map((speaker) => (
-              <div
-                key={speaker}
-                className="bg-white rounded-lg shadow-lg p-6 text-center hover:transform hover:scale-105 transition duration-300"
-              >
-                <div className="w-24 h-24 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full mx-auto mb-4"></div>
-                <h3 className="text-xl font-bold mb-2">Ponente {speaker}</h3>
-                <p className="text-gray-600 text-sm">Experto en su campo</p>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Mar Romera */}
+            <div className="bg-white rounded-lg shadow-xl p-8 hover:transform hover:scale-105 transition duration-300">
+              <div className="flex flex-col items-center">
+                <img
+                  src="https://www.mtconsulting.es/wp-content/uploads/2019/09/contratar_marromera-1.png"
+                  alt="Mar Romera"
+                  className="w-48 h-48 object-cover rounded-full mb-6 shadow-lg border-4 border-purple-200"
+                />
+                <h3 className="text-2xl font-bold mb-2 text-purple-700">
+                  Mar Romera
+                </h3>
+                <p className="text-gray-600 text-sm mb-4 font-semibold">
+                  Experta en Inteligencia Emocional
+                </p>
+                <p className="text-gray-700 text-center leading-relaxed">
+                  Maestra, pedagoga y psicopedagoga. Presidenta de la Asociación
+                  Pedagógica Francesco Tonucci y autora del modelo pedagógico
+                  "Educar con tres Cs: Capacidades, Competencias y Corazón". Una
+                  de las principales referencias en inteligencia emocional en la
+                  educación española.
+                </p>
+                <a
+                  href="https://www.mtconsulting.es/agencia-conferenciantes/contratar-mar-romera"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 text-purple-600 hover:text-green-600 font-semibold underline"
+                >
+                  Más información →
+                </a>
               </div>
-            ))}
+            </div>
+
+            {/* Albert Espinosa */}
+            <div className="bg-white rounded-lg shadow-xl p-8 hover:transform hover:scale-105 transition duration-300">
+              <div className="flex flex-col items-center">
+                <img
+                  src="https://www.albertespinosa.com/wp-content/uploads/2024/01/albert-espinosa-trans-bn-min.png"
+                  alt="Albert Espinosa"
+                  className="w-48 h-48 object-cover object-top rounded-full mb-6 shadow-lg border-4 border-green-200"
+                />
+                <h3 className="text-2xl font-bold mb-2 text-green-700">
+                  Albert Espinosa
+                </h3>
+                <p className="text-gray-600 text-sm mb-4 font-semibold">
+                  Escritor, Guionista y Dramaturgo
+                </p>
+                <p className="text-gray-700 text-center leading-relaxed">
+                  Ingeniero industrial, escritor y dramaturgo español. Autor de
+                  obras como "El mundo azul" y "Pulseras Rojas". Su obra se
+                  caracteriza por transmitir mensajes de superación personal,
+                  optimismo y la importancia de vivir el presente con pasión.
+                </p>
+                <a
+                  href="https://www.elblogdealbertespinosa.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 text-green-600 hover:text-purple-600 font-semibold underline"
+                >
+                  Más información →
+                </a>
+              </div>
+            </div>
+
+            {/* María José Sánchez Parra */}
+            <div className="bg-white rounded-lg shadow-xl p-8 hover:transform hover:scale-105 transition duration-300">
+              <div className="flex flex-col items-center">
+                <img
+                  src="https://mjpedagogiamusical.com/wp-content/uploads/2020/09/IMG_4351-2-600x450.jpg"
+                  alt="María José Sánchez Parra"
+                  className="w-48 h-48 object-cover rounded-full mb-6 shadow-lg border-4 border-indigo-200"
+                />
+                <h3 className="text-2xl font-bold mb-2 text-indigo-700">
+                  María José Sánchez Parra
+                </h3>
+                <p className="text-gray-600 text-sm mb-4 font-semibold">
+                  Doctora en Pedagogía Musical
+                </p>
+                <p className="text-gray-700 text-center leading-relaxed">
+                  Doctora en Humanidades, Arte y Educación por la UCLM y
+                  Titulada Superior en Pedagogía del Lenguaje y Educación
+                  Musical. Profesora en la Facultad de Educación de Toledo. Más
+                  de 387.000 seguidores en YouTube donde comparte su pasión por
+                  la educación musical.
+                </p>
+                <a
+                  href="https://mjpedagogiamusical.com/sobre-mi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 text-indigo-600 hover:text-green-600 font-semibold underline"
+                >
+                  Más información →
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
