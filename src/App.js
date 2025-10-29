@@ -6,21 +6,68 @@ function App() {
     <div className="min-h-screen bg-gray-50">
       <Navbar />
 
+      {/* Banner Congreso Finalizado */}
+      <div className="pt-16 bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex items-center justify-center space-x-3">
+            <svg
+              className="w-6 h-6 animate-pulse"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fillRule="evenodd"
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                clipRule="evenodd"
+              />
+            </svg>
+            <p className="text-lg md:text-xl font-bold text-center">
+              ⚠️ Congreso Finalizado - Las inscripciones están cerradas
+            </p>
+            <svg
+              className="w-6 h-6 animate-pulse"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fillRule="evenodd"
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+
       {/* Hero Section */}
       <section
         id="inicio"
-        className="pt-16 bg-gradient-to-br from-blue-500 to-purple-600 text-white"
+        className="bg-gradient-to-br from-blue-500 to-purple-600 text-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+          <img
+            src="/logo.png"
+            alt="Summit Huesca 2025"
+            className="h-48 md:h-60 w-auto mx-auto mb-8 drop-shadow-2xl"
+          />
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Congreso Summit Huesca 2025
           </h1>
           <p className="text-xl md:text-2xl mb-8">
             El evento más importante del año
           </p>
-          <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 shadow-lg">
-            Inscríbete Ahora
-          </button>
+          <div className="inline-block bg-gray-400 text-white px-8 py-3 rounded-full font-semibold cursor-not-allowed opacity-75">
+            <span className="flex items-center space-x-2">
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fillRule="evenodd"
+                  d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              <span>Inscripciones Cerradas</span>
+            </span>
+          </div>
         </div>
       </section>
 
@@ -214,9 +261,49 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p>&copy; 2025 Summit Huesca. Todos los derechos reservados.</p>
+      <footer className="bg-gray-800 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Patrocinadores */}
+          <div className="mb-8">
+            <h3 className="text-2xl font-bold text-center mb-6">
+              Patrocinadores
+            </h3>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+              {/* Edelvives */}
+              <a
+                href="https://www.edelvives.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white rounded-lg px-8 py-6 hover:shadow-xl transition duration-300 transform hover:scale-105 flex items-center justify-center min-w-[200px]"
+              >
+                <div className="text-center">
+                  <span className="text-2xl font-bold text-blue-600">
+                    EDELVIVES
+                  </span>
+                  <p className="text-xs text-gray-500 mt-1">Editorial</p>
+                </div>
+              </a>
+
+              {/* Fundación Ibercaja */}
+              <a
+                href="https://www.fundacionibercaja.es"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white rounded-lg p-6 hover:shadow-xl transition duration-300 transform hover:scale-105"
+              >
+                <img
+                  src="https://www.fundacionibercaja.es/public/img/logos/logo-fundacion-ibercaja.svg"
+                  alt="Fundación Ibercaja"
+                  className="h-16 w-auto"
+                />
+              </a>
+            </div>
+          </div>
+
+          {/* Copyright */}
+          <div className="text-center border-t border-gray-700 pt-6">
+            <p>&copy; 2025 Summit Huesca. Todos los derechos reservados.</p>
+          </div>
         </div>
       </footer>
     </div>
