@@ -42,14 +42,9 @@ function App() {
       {/* Hero Section */}
       <section
         id="inicio"
-        className="bg-gradient-to-br from-blue-500 to-purple-600 text-white"
+        className="bg-gradient-to-br from-purple-600 via-indigo-600 to-green-500 text-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
-          <img
-            src="/logo.png"
-            alt="Summit Huesca 2025"
-            className="h-48 md:h-60 w-auto mx-auto mb-8 drop-shadow-2xl"
-          />
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Congreso Summit Huesca 2025
           </h1>
@@ -77,8 +72,13 @@ function App() {
           <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">
             Video Promocional
           </h2>
-          <div className="relative rounded-lg overflow-hidden shadow-2xl">
-            <video className="w-full h-auto" controls>
+          <div className="relative rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-blue-500 to-purple-600">
+            <video
+              className="w-full h-auto"
+              controls
+              poster="/logo.png"
+              preload="metadata"
+            >
               <source
                 src="/videos/promo-summit-huesca-2025.mp4"
                 type="video/mp4"
@@ -92,7 +92,7 @@ function App() {
       {/* Programa */}
       <section
         id="programa"
-        className="py-20 bg-gradient-to-br from-gray-50 to-blue-50"
+        className="py-20 bg-gradient-to-br from-gray-50 to-purple-50"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">
@@ -104,7 +104,7 @@ function App() {
             <a
               href="/Programa_Vip_A4.pdf"
               download
-              className="inline-flex items-center bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full font-semibold hover:from-blue-700 hover:to-purple-700 transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="inline-flex items-center bg-gradient-to-r from-purple-600 to-green-500 text-white px-8 py-4 rounded-full font-semibold hover:from-purple-700 hover:to-green-600 transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <svg
                 className="w-6 h-6 mr-2"
@@ -125,7 +125,7 @@ function App() {
 
           {/* Visor de PDF */}
           <div className="bg-white rounded-lg shadow-2xl overflow-hidden">
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 text-center">
+            <div className="bg-gradient-to-r from-purple-600 to-green-500 text-white p-4 text-center">
               <h3 className="text-xl font-semibold">
                 Vista Previa del Programa
               </h3>
@@ -146,7 +146,7 @@ function App() {
                 href="/Programa_Vip_A4.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:text-blue-800 font-semibold underline"
+                className="text-purple-600 hover:text-green-600 font-semibold underline"
               >
                 Ábrelo en una nueva pestaña
               </a>

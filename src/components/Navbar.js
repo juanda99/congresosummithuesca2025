@@ -22,7 +22,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="bg-gradient-to-r from-blue-600 to-blue-800 shadow-lg fixed w-full z-50">
+    <nav className="bg-gradient-to-r from-purple-600 to-indigo-700 shadow-lg fixed w-full z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo/Título */}
@@ -42,13 +42,13 @@ const Navbar = () => {
                 key={item.name}
                 href={item.href}
                 onClick={() => handleMenuClick(item.name)}
-                className={`text-white hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 hover:shadow-lg relative overflow-hidden group ${
-                  activeItem === item.name ? 'animate-pulse bg-blue-700' : ''
+                className={`text-white hover:bg-purple-700 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:scale-110 hover:shadow-lg relative overflow-hidden group ${
+                  activeItem === item.name ? 'animate-pulse bg-purple-700' : ''
                 }`}
                 style={{ animationDelay: `${index * 50}ms` }}
               >
                 <span className="relative z-10">{item.name}</span>
-                <span className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 -z-0"></span>
+                <span className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-500 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 -z-0"></span>
               </a>
             ))}
           </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:bg-blue-700 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white transition-all duration-300 hover:scale-110"
+              className="text-white hover:bg-purple-700 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white transition-all duration-300 hover:scale-110"
               aria-label="Menú"
             >
               <svg
@@ -88,17 +88,17 @@ const Navbar = () => {
           isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1 bg-blue-700">
+        <div className="px-2 pt-2 pb-3 space-y-1 bg-purple-700">
           {menuItems.map((item, index) => (
             <a
               key={item.name}
               href={item.href}
               onClick={() => handleMenuClick(item.name)}
-              className={`text-white hover:bg-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 hover:translate-x-2 hover:shadow-lg transform ${
+              className={`text-white hover:bg-green-500 block px-3 py-2 rounded-md text-base font-medium transition-all duration-300 hover:translate-x-2 hover:shadow-lg transform ${
                 isOpen
                   ? 'translate-x-0 opacity-100'
                   : '-translate-x-full opacity-0'
-              } ${activeItem === item.name ? 'bg-blue-600 scale-105' : ''}`}
+              } ${activeItem === item.name ? 'bg-green-600 scale-105' : ''}`}
               style={{
                 transitionDelay: isOpen ? `${index * 50}ms` : '0ms',
                 animationDelay: `${index * 50}ms`,
